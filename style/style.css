@@ -20,14 +20,39 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.Container {
+    margin: 20px 0;
+}
+
+.button {
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: var(--White);
+    background-color: var(--Very-dark-blackish-blue);
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--Very-dark-blackish-blue);
+    background-color: var(--White);
+}
+
+.button:disabled {
+    opacity: 0.5;
 }
 
 .NFT {
+    margin-top: 10px;
     border-radius: 10px;
-    width: 15%;
+    width: 80%;
     margin: 0 auto;
     background: var(--Very-dark-blue-card-BG);
+    margin-bottom: 10px;
 }
 
 .NFT-top {
@@ -107,7 +132,7 @@ body {
 
 .NFT-center-bottom-L2 {
     color: var(--Soft-blue);
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 5px;
 }
 
